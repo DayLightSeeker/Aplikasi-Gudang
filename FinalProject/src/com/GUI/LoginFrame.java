@@ -161,16 +161,18 @@ public class LoginFrame extends javax.swing.JFrame {
         }else{
             try {
                 con = Connector.getConnection();
-                pt = con.prepareStatement("select * from user where id_user=? and password=?");
+                pt = con.prepareStatement("select * from login where username=? and password=?");
                 pt.setString(1, username);
                 pt.setString(2, password);
                 re = pt.executeQuery();
                 
                 if (re.next()) {
-                    String ss = re.getString("id_user");
+                    String ss = re.getString("username");
                     BaseFrame home = new BaseFrame(ss);
+                    //System.out.println("login berhasil!");
                     home.setVisible(true);
                     setVisible(false);
+                    
                 }else{
                     JOptionPane.showMessageDialog(rootPane, "Username / password salah!");
                 }
