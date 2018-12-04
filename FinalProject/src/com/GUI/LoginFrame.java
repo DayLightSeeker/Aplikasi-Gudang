@@ -43,7 +43,6 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         usernameTxt = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        tambahUserButton = new javax.swing.JButton();
         passwordTxt = new javax.swing.JPasswordField();
         loginButton = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -76,8 +75,6 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Username");
 
-        tambahUserButton.setText("Tambah User");
-
         passwordTxt.setText("qwe");
 
         loginButton.setText("Login");
@@ -102,7 +99,6 @@ public class LoginFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(tambahUserButton)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(usernameTxt)
@@ -128,9 +124,7 @@ public class LoginFrame extends javax.swing.JFrame {
                     .addComponent(passwordTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
                     .addComponent(cancelButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tambahUserButton)
-                .addContainerGap(91, Short.MAX_VALUE))
+                .addContainerGap(129, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -228,7 +222,6 @@ public class LoginFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton loginButton;
     private javax.swing.JPasswordField passwordTxt;
-    private javax.swing.JButton tambahUserButton;
     private javax.swing.JTextField usernameTxt;
     // End of variables declaration//GEN-END:variables
 }
