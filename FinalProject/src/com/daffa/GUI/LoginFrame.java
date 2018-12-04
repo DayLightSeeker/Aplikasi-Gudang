@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Package;
+package com.daffa.GUI;
 
 import javafx.scene.control.TableView;
 import javax.swing.JFrame;
@@ -143,6 +143,7 @@ public class LoginFrame extends javax.swing.JFrame {
 
     private void CancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelButtonActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_CancelButtonActionPerformed
 
     /**
