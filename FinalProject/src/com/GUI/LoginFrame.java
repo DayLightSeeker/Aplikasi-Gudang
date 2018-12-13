@@ -162,9 +162,10 @@ public class LoginFrame extends javax.swing.JFrame {
                 
                 if (re.next()) {
                     String ss = re.getString("username");
-                    BaseFrame home = new BaseFrame(ss);
+                    //BaseFrame home = new BaseFrame(ss);
+                    HomeFrame hf = new HomeFrame();
                     //System.out.println("login berhasil!");
-                    home.setVisible(true);
+                    hf.setVisible(true);
                     setVisible(false);
                     
                 }else{
