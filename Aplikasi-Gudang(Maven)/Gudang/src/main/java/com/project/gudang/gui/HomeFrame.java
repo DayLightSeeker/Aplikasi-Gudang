@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package com.project.gudang.gui;
 
-package com.GUI;
-import javax.swing.ImageIcon;
 /**
  *
  * @author bagas
@@ -17,11 +16,6 @@ public class HomeFrame extends javax.swing.JFrame {
      */
     public HomeFrame() {
         initComponents();
-        userManajemenButton.setEnabled(false);
-        if (labelUser.getText() == "admin") {
-            userManajemenButton.setEnabled(true);
-        }
-
     }
 
     /**
@@ -33,6 +27,7 @@ public class HomeFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        stockBarangLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         labelUser = new javax.swing.JLabel();
@@ -43,9 +38,19 @@ public class HomeFrame extends javax.swing.JFrame {
         barangKeluarButton = new javax.swing.JButton();
         keluarButton = new javax.swing.JButton();
         userManajemenButton = new javax.swing.JButton();
-        stockBarangLabel = new javax.swing.JLabel();
+        stockBarangLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        labelUser1 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        userStatusLabel1 = new javax.swing.JLabel();
+        stockBarangButton1 = new javax.swing.JButton();
+        barangMasukButton1 = new javax.swing.JButton();
+        barangKeluarButton1 = new javax.swing.JButton();
+        keluarButton1 = new javax.swing.JButton();
+        userManajemenButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        stockBarangLabel.setText("jLabel4");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -57,7 +62,7 @@ public class HomeFrame extends javax.swing.JFrame {
 
         jLabel3.setText("status :");
 
-        userStatusLabel.setText("admin");
+        userStatusLabel.setText("jLabel4");
 
         stockBarangButton.setText("Stok Barang");
         stockBarangButton.addActionListener(new java.awt.event.ActionListener() {
@@ -84,7 +89,46 @@ public class HomeFrame extends javax.swing.JFrame {
             }
         });
 
-        stockBarangLabel.setText("jLabel4");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        stockBarangLabel1.setText("jLabel4");
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("GUDANG");
+
+        jLabel5.setText("user :");
+
+        labelUser1.setText("admin");
+
+        jLabel6.setText("status :");
+
+        userStatusLabel1.setText("jLabel4");
+
+        stockBarangButton1.setText("Stok Barang");
+        stockBarangButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stockBarangButton1ActionPerformed(evt);
+            }
+        });
+
+        barangMasukButton1.setText("Barang Masuk");
+        barangMasukButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                barangMasukButton1ActionPerformed(evt);
+            }
+        });
+
+        barangKeluarButton1.setText("Barang Keluar");
+
+        keluarButton1.setText("Keluar");
+
+        userManajemenButton1.setText("Manajemen User");
+        userManajemenButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                userManajemenButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,30 +139,30 @@ public class HomeFrame extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(layout.createSequentialGroup()
                             .addGap(310, 310, 310)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(135, 135, 135)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel2)
-                                .addComponent(jLabel3))
+                                .addComponent(jLabel5)
+                                .addComponent(jLabel6))
                             .addGap(18, 18, 18)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(labelUser)
-                                .addComponent(userStatusLabel)))
+                                .addComponent(labelUser1)
+                                .addComponent(userStatusLabel1)))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addGap(44, 44, 44)
-                            .addComponent(stockBarangButton)
+                            .addComponent(stockBarangButton1)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(userManajemenButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(barangMasukButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(userManajemenButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(barangMasukButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGap(153, 153, 153)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(barangKeluarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(keluarButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(barangKeluarButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(keluarButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(75, 75, 75)
-                        .addComponent(stockBarangLabel)))
-                .addContainerGap(108, Short.MAX_VALUE))
+                        .addComponent(stockBarangLabel1)))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,24 +171,24 @@ public class HomeFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(labelUser))
+                            .addComponent(jLabel5)
+                            .addComponent(labelUser1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(userStatusLabel)))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel6)
+                            .addComponent(userStatusLabel1)))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(63, 63, 63)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(stockBarangButton)
-                    .addComponent(barangMasukButton)
-                    .addComponent(barangKeluarButton))
+                    .addComponent(stockBarangButton1)
+                    .addComponent(barangMasukButton1)
+                    .addComponent(barangKeluarButton1))
                 .addGap(18, 18, 18)
-                .addComponent(stockBarangLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
+                .addComponent(stockBarangLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(keluarButton)
-                    .addComponent(userManajemenButton))
+                    .addComponent(keluarButton1)
+                    .addComponent(userManajemenButton1))
                 .addGap(169, 169, 169))
         );
 
@@ -157,7 +201,6 @@ public class HomeFrame extends javax.swing.JFrame {
         StockBarang sb = new StockBarang();
         this.setVisible(false);
         sb.setVisible(true);
-
     }//GEN-LAST:event_stockBarangButtonActionPerformed
 
     private void barangMasukButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_barangMasukButtonActionPerformed
@@ -170,8 +213,29 @@ public class HomeFrame extends javax.swing.JFrame {
 
     private void userManajemenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userManajemenButtonActionPerformed
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_userManajemenButtonActionPerformed
+
+    private void stockBarangButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockBarangButton1ActionPerformed
+        // TODO add your handling code here:
+        HomeFrame hf = new HomeFrame();
+        StockBarang sb = new StockBarang();
+        this.setVisible(false);
+        sb.setVisible(true);
+    }//GEN-LAST:event_stockBarangButton1ActionPerformed
+
+    private void barangMasukButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_barangMasukButton1ActionPerformed
+        // TODO add your handling code here:
+        HomeFrame hf = new HomeFrame();
+        StockBarang sb = new StockBarang();
+        this.setVisible(false);
+        sb.setVisible(true);
+    }//GEN-LAST:event_barangMasukButton1ActionPerformed
+
+    private void userManajemenButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userManajemenButton1ActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_userManajemenButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -206,20 +270,30 @@ public class HomeFrame extends javax.swing.JFrame {
                 new HomeFrame().setVisible(true);
             }
         });
-        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton barangKeluarButton;
+    private javax.swing.JButton barangKeluarButton1;
     private javax.swing.JButton barangMasukButton;
+    private javax.swing.JButton barangMasukButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JButton keluarButton;
+    private javax.swing.JButton keluarButton1;
     private javax.swing.JLabel labelUser;
+    private javax.swing.JLabel labelUser1;
     private javax.swing.JButton stockBarangButton;
+    private javax.swing.JButton stockBarangButton1;
     private javax.swing.JLabel stockBarangLabel;
+    private javax.swing.JLabel stockBarangLabel1;
     private javax.swing.JButton userManajemenButton;
+    private javax.swing.JButton userManajemenButton1;
     private javax.swing.JLabel userStatusLabel;
+    private javax.swing.JLabel userStatusLabel1;
     // End of variables declaration//GEN-END:variables
 }

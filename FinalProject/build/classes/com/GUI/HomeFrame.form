@@ -60,7 +60,7 @@
                       <Component id="stockBarangLabel" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="102" max="32767" attributes="0"/>
+              <EmptySpace pref="108" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -127,7 +127,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="userStatusLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel4"/>
+        <Property name="text" type="java.lang.String" value="admin"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="stockBarangButton">
